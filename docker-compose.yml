@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  mongodatabase:
+    container_name: mongodatabase
+    image: mongo
+    ports:
+      - "27017:27017"
