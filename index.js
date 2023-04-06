@@ -13,7 +13,7 @@ const app = express();
 function server() {
   try {
     mongoose
-      .connect("mongodb://mongodatabase:27017/expressmongo", {
+      .connect("mongodb://localhost:27017/expressmongo", {
         useNewUrlParser: true,
       })
       .then(() => console.log("MongoDB Connected"))
