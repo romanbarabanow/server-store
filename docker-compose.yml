@@ -1,6 +1,14 @@
 version: "3.8"
 
 services:
+  backend:
+    container_name: backend
+    build: ./
+    ports:
+      - "8080:8080"
+    restart: always
+    links:
+      - mongodatabase
   mongodatabase:
     container_name: mongodatabase
     image: mongo
